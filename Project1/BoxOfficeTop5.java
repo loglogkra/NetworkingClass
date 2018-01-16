@@ -40,10 +40,7 @@ public class BoxOfficeTop5 {
 		ArrayList<String> movies = new ArrayList<String>();
 
 		// Start the HTTP protocol with a GET
-		/**
-		 * uncomment the following line to get interactive "yesterdays date info otherwise it will only get 01/24/2017's date!
-		 */
-		//cmd = "GET /daily/chart/?sortdate=" + dateFormat.format(cal.getTime()) + " HTTP/1.1";
+		
 		cmd = "GET /daily/chart/?sortdate=2017-01-24 HTTP/1.1";
 		send.println(cmd);
 		send.println("Host: boxofficemojo.com");
